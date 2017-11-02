@@ -1,0 +1,84 @@
+@charset "UTF-8";    /* 文字コードの指定 */
+
+@import 'https://fonts.googleapis.com/css?family=Abel';    /* Google Fonts用のCSSを読み込み */
+
+html
+{
+    font-size: 62.5%;
+}
+
+body
+{
+    font-family: '游ゴシック', YuGothic, 'メイリオ', Verdana, 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    letter-spacing: .1em;
+    color: #4c4c4c;
+    background-color: #f5fffa; 
+}
+
+.image
+{
+  background-image: 
+  url("../images/image.jpg");
+  height: 500px;
+  width: 100%;
+  background-size: cover;
+  background-position: center center; 
+}
+
+.text-center {
+    text-align: center;
+}
+
+.container
+{
+    margin-bottom: 60px 0; /* section要素の余白を上下60pxで揃える */
+}
+
+section .container
+{
+    width: 30%; /* sectionの中のインナーボックスをウィンドウ幅に対して90%に */
+}
+
+section h1,
+section h2
+{
+    text-transform: uppercase;
+    margin: 15px
+}
+
+#contents .box
+{
+    display: -webkit-flex;
+    display:         flex;
+    justify-content: space-between;
+}
+
+#information
+{
+    margin-top: 60px ;
+    margin-bottom: 40px ;
+    margin-left: 30px ;
+    margin-right: 30px ;
+}
+
+#contents {
+  flex-direction: row;
+}
+.container {
+  border: solid 1px ;
+  margin: 10px;
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .image {
+      height: 250px;
+  }
+  .box {
+    flex-direction: column;
+  }
+}
+
+
